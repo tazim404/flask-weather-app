@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>{%block title%}{%endblock%}</title>
+
+</head>
+
+<body>
+    <header class="text-gray-500 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="/">
+                <svg height="50pt" viewBox="0 -46 512 512" width="100pt" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m389.082031 137.84375c-4.746093-6.785156-3.105469-16.144531 3.691407-20.890625l49.261718-34.480469c6.78125-4.746094 16.144532-3.105468 20.890625 3.6875 4.746094 6.785156 3.101563 16.144532-3.691406 20.890625l-49.265625 34.480469c-6.796875 4.75-16.152344 3.09375-20.886719-3.6875zm0 0"
+                        fill="#ff9f00" />
+                    <path
+                        d="m172.300781 127.835938-44.722656-40.238282c-6.152344-5.535156-6.652344-15.027344-1.113281-21.183594 5.566406-6.164062 15.015625-6.648437 21.179687-1.109374l44.722657 40.238281c6.152343 5.535156 6.652343 15.027343 1.113281 21.179687-5.53125 6.164063-15.011719 6.65625-21.179688 1.113282zm0 0"
+                        fill="#ffd400" />
+                    <path
+                        d="m497 240h-61c-8.289062 0-15-6.710938-15-15s6.710938-15 15-15h61c8.289062 0 15 6.710938 15 15s-6.710938 15-15 15zm0 0"
+                        fill="#ff9f00" />
+                    <path
+                        d="m301 15v60c0 8.398438-6.597656 15-15 15s-15-6.601562-15-15v-60c0-8.402344 6.597656-15 15-15s15 6.597656 15 15zm0 0"
+                        fill="#ffd400" />
+                    <path d="m286 90v-90c8.402344 0 15 6.597656 15 15v60c0 8.398438-6.597656 15-15 15zm0 0"
+                        fill="#ff9f00" />
+                    <path
+                        d="m391 225c0 57.898438-47.101562 105-105 105s-105-47.101562-105-105 47.101562-105 105-105 105 47.101562 105 105zm0 0"
+                        fill="#ffd400" />
+                    <path d="m391 225c0 57.898438-47.101562 105-105 105v-210c57.898438 0 105 47.101562 105 105zm0 0"
+                        fill="#ff9f00" />
+                    <path
+                        d="m512 360c0 33-28 60-61 60h-270c-33 0-60-27-60-60 0-11.101562 3.300781-21 8.402344-30h-69.402344c-33 0-60-27-60-60s27-60 60-60h121c33 0 60 27 60 60 0 11.101562-3.300781 21-8.402344 30h218.402344c33 0 61 27 61 60zm0 0"
+                        fill="#ede9e8" />
+                    <path d="m512 360c0 33-28 60-61 60h-165v-120h165c33 0 61 27 61 60zm0 0" fill="#dfd7d5" /></svg>
+                <span class="ml-3 text-xl">Weather App</span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-white" href="/">Home</a>
+                <a class="mr-5 hover:text-white" href="/about">About</a>
+
+            </nav>
+
+        </div>
+    </header>
+    <hr>
+
+    {%block body%}
+    {%endblock%}
+
+</body>
+
+</html>
