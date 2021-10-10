@@ -32,4 +32,3 @@ def error(e):
     return render_template('error.html')
 
 
-app.run(debug=True)
